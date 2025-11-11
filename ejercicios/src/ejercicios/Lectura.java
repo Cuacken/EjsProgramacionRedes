@@ -21,7 +21,7 @@ public class Lectura {
                 }
                 lector.close();
             } else {
-                System.out.println("El archivo no existe. Se creará al guardar datos.");
+                System.out.println("El archivo no existe. Se creara al guardar datos.");
             }
         } catch (IOException e) {
             System.out.println("Error al leer el archivo.");

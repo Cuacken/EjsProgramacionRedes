@@ -9,16 +9,17 @@ public class Banco {
         int maxClientes = 5;
         int cajeros = 3; 
         int[] atendidos = new int[cajeros];
-
+        System.out.println("-------------------------------");
         System.out.println("Simulación de una Cola de Banco");
+        System.out.println("-------------------------------");
 
        
         for (int i = 1; i <= maxClientes; i++) {
             cola.add("Cliente" + i);
         }
 
-        System.out.println("\nClientes en espera: " + cola);
-        System.out.println("\nAtención de clientes ");
+        System.out.println("Clientes en espera: " + cola);
+        System.out.println("Atención de clientes ");
 
         int numeroCajero = 0;
 
@@ -33,12 +34,12 @@ public class Banco {
         }
 
      
-        System.out.println("\n Resumen de atención ");
+        System.out.println("\n Resumen de atencion ");
         for (int i = 0; i < cajeros; i++) {
             System.out.println("Cajero " + (i + 1) + " atendió a " + atendidos[i] + " clientes.");
         }
 
-        System.out.println("\nTodos los clientes fueron atendidos.");
+        System.out.println("Todos los clientes fueron atendidos.");
     }
 }
 

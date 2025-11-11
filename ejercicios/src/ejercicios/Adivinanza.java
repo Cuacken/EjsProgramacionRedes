@@ -9,20 +9,20 @@ public class Adivinanza {
         int intento = 0;
         int numeroUsuario = 0;
 
-        System.out.println("Adivina el número entre 1 y 100");
+        System.out.println("Adivina el numero entre 1 y 100");
 
         
         while (numeroUsuario != numeroSecreto) {
-            System.out.print("Ingresa tu número: ");
+            System.out.print("Ingresa tu numero: ");
             numeroUsuario = sc.nextInt();
             intento++;
 
             if (numeroUsuario < numeroSecreto) {
-                System.out.println("El número es mayor. Intenta otra vez.");
+                System.out.println("El numero es mayor, intentalo de nuevo.");
             } else if (numeroUsuario > numeroSecreto) {
-                System.out.println("El número es menor. Intenta otra vez.");
+                System.out.println("El numero es menor, intentalo de nuevo.");
             } else {
-                System.out.println("Adivinaste El número era " + numeroSecreto);
+                System.out.println("Adivinaste! El numero era " + numeroSecreto + ".");
                 System.out.println("Lo lograste en " + intento + " intentos.");
             }
         }

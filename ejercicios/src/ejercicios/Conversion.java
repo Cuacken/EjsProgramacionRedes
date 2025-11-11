@@ -11,7 +11,7 @@ public class Conversion {
 
         double fahrenheit = (celsius * 9 / 5) + 32;
 
-        System.out.println(celsius + " °C equivalen a " + fahrenheit + " °F");
+        System.out.println(celsius + " °C equivale a " + fahrenheit + " °F");
 
         sc.close();
     }

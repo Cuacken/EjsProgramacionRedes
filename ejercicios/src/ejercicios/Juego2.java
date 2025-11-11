@@ -8,7 +8,7 @@ public class Juego2 {
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
 
-        String[] palabras = {"java", "programa", "banco", "teclado", "ahorcado"};
+        String[] palabras = {"gato", "perro", "pato", "raton", "ahorcado", "cabeza", "brazos", "piernas", "supercalifragilisticoespiralidoso"};
         String palabra = palabras[rand.nextInt(palabras.length)];
 
         char[] oculto = new char[palabra.length()];
@@ -18,15 +18,15 @@ public class Juego2 {
 
         int intentos = 6;
         boolean ganado = false;
-
-        System.out.println("Juego del Ahorcado");
+        System.out.println("--------");
+        System.out.println("Ahorcado");
+        System.out.println("--------");
 
         while (intentos > 0 && !ganado) {
-            System.out.print("\nPalabra: ");
+            System.out.print("Palabra: ");
             System.out.println(oculto);
-            System.out.println("Intentos restantes: " + intentos);
 
-            System.out.print("Ingresa una letra: ");
+            System.out.print("Ingresa una letra");
             char letra = sc.next().toLowerCase().charAt(0);
 
             boolean acierto = false;
@@ -39,9 +39,9 @@ public class Juego2 {
 
             if (!acierto) {
                 intentos--;
-                System.out.println("Letra incorrecta");
+                System.out.println("Incorrecto! Te quedan " + intentos + " intentos"); //Letra incorrecta
             } else {
-                System.out.println("Letra correcta");
+                //Letra correcta
             }
 
             ganado = true;
@@ -54,9 +54,13 @@ public class Juego2 {
         }
 
         if (ganado) {
-            System.out.println("\nGanaste. La palabra era: " + palabra);
+            System.out.println("-----------------------------------");
+            System.out.println("Ganaste! La palabra era " + palabra + ".");
+            System.out.println("-----------------------------------");
         } else {
-            System.out.println("\nPerdiste. La palabra era: " + palabra);
+            System.out.println("-----------------------------------");
+            System.out.println("Perdiste! La palabra era " + palabra + ".");
+            System.out.println("-----------------------------------");
         }
 
         sc.close();

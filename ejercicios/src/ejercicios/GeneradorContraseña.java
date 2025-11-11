@@ -23,7 +23,7 @@ public class GeneradorContraseña {
             contraseña += caracteres.charAt(indice);
         }
 
-        System.out.println("Tu contraseña generada es: " + contraseña);
+        System.out.println("Tu contraseña es: " + contraseña);
 
         sc.close();
     }

@@ -26,7 +26,7 @@ public class Juego {
 
             
             if (tablero[fila][col] != ' ') {
-                System.out.println("Casilla ocupada, intenta otra vez.");
+                System.out.println("Casilla ocupada, intenta de nuevo");
                 continue;
             }
 
@@ -45,13 +45,13 @@ public class Juego {
                 (tablero[0][0] == jugador && tablero[1][1] == jugador && tablero[2][2] == jugador) ||
                 (tablero[0][2] == jugador && tablero[1][1] == jugador && tablero[2][0] == jugador)
             ) {
-                System.out.println("Jugador " + jugador + " gano");
+                System.out.println("El ganador es el Jugador " + jugador + "!");
                 break;
             }
 
             
             if (turnos == 9) {
-                System.out.println("Empate");
+                System.out.println("Empate!");
                 break;
             }
 
